@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie_item"
+            type="kr.ac.skuniv.choejun_yeong.boostcamp3.adapter.MovieViewHolder" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/border_bottom">
+
+
+        <ImageView
+            android:id="@+id/movie_item_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/movie_item_title"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="엑스맨"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/movie_item_image" />
+
+        <RatingBar
+            android:id="@+id/movie_item_user_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:isIndicator="true"
+            android:max="10"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5"
+            app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+            app:layout_constraintTop_toBottomOf="@id/movie_item_title" />
+
+        <TextView
+            android:id="@+id/movie_item_pubdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="2016"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+            app:layout_constraintTop_toBottomOf="@id/movie_item_user_rating" />
+
+        <TextView
+            android:id="@+id/movie_item_director"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="사이먼 킨버그"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+            app:layout_constraintTop_toBottomOf="@id/movie_item_pubdate" />
+
+        <TextView
+            android:id="@+id/movie_item_actor"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+
+            android:text="소피터너 | 제니퍼로렌스 | 제임스 맥어보이 | 타이 쉐리던 | 마이클 패스벤더"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/movie_item_image"
+            app:layout_constraintTop_toBottomOf="@id/movie_item_director" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
