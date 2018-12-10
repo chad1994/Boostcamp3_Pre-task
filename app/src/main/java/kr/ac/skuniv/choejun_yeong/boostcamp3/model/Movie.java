@@ -1,4 +1,5 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.model;
+/*
 
 public class Movie {
     String title;
@@ -53,3 +54,4 @@ public class Movie {
         return userRating;
     }
 }
+*/
