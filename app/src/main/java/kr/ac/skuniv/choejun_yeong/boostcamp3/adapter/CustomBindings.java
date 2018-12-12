@@ -2,6 +2,9 @@ package kr.ac.skuniv.choejun_yeong.boostcamp3.adapter;
 
 import android.text.TextWatcher;
 import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,5 +22,12 @@ public class CustomBindings {
     @BindingAdapter("textChangedListener")
     public static void bindTextWatcher(EditText editText, TextWatcher textWatcher) {
         editText.addTextChangedListener(textWatcher);
+    }
+
+    @BindingAdapter("setImage")
+    public static void bindImageUrl(ImageView imageView, String url) {
+        Glide.with(imageView.getContext())
+                .load(url)
+                .into(imageView);
     }
 }

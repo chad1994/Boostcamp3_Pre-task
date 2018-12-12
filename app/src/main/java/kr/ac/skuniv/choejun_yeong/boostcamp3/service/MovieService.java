@@ -27,9 +27,9 @@ public class MovieService {
         mService = NetworkUtil.getMovieService(Id,Secret);
     }
 
-    public Observable<Response<ReponseMovie>> getMovieList(String movieName){
+    public Observable<Response<ReponseMovie>> getMovieList(String movieName,int display){
         setService(BuildConfig.NaverClientID,BuildConfig.NaverClientSecret);
-        return mService.getMovieList(movieName).subscribeOn(Schedulers.io())
+        return mService.getMovieList(movieName,display).subscribeOn(Schedulers.io())
                 .doOnNext(res -> {
                     if(res.code() == HttpsURLConnection.HTTP_OK){
                         res.body();

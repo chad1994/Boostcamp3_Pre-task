@@ -40,7 +40,6 @@ public class MovieRvAdapter extends RecyclerView.Adapter<MovieViewHolder>  {
     @Override
     public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
-        Log.d("@@@",""+layoutInflater.toString());
         ViewDataBinding binding = DataBindingUtil.inflate(layoutInflater, i, viewGroup,false);
 
         return new MovieViewHolder(binding);

@@ -1,6 +1,5 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.model
 
-
 data class Movie(
         val title: String,
         val link: String,

@@ -28,6 +28,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@color/colorAccent"
+            setImage="@{vm.getMovieAt(position).image}"
             />
 
         <TextView
@@ -49,7 +50,7 @@
             android:isIndicator="true"
             android:max="10"
             android:numStars="5"
-            android:rating="3"
+            android:rating="@{Float.parseFloat(vm.getMovieAt(position).userRating)/2.0f}"
             android:stepSize="0.5"
             app:layout_constraintLeft_toRightOf="@id/movie_item_image"
             app:layout_constraintTop_toBottomOf="@id/movie_item_title" />

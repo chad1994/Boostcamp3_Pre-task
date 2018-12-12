@@ -4,29 +4,24 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.databinding.Bindable;
-import androidx.databinding.adapters.TextViewBindingAdapter;
+import androidx.databinding.ObservableInt;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import io.reactivex.disposables.CompositeDisposable;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.adapter.MovieRvAdapter;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movies;
 
 public class MainViewModel extends ViewModel {
-    @NonNull
-    private CompositeDisposable mCompositeDisposable = new CompositeDisposable();
+
     private Movies movies;
     private MovieRvAdapter adapter;
-    private String editalbeName;
+    private String editableName;
     public MutableLiveData<Movie> selected;
     public MutableLiveData<String> movieName;
-
+    public ObservableInt emptyVisibility;
 
     public MainViewModel(){
     }
@@ -36,11 +31,12 @@ public class MainViewModel extends ViewModel {
         adapter = new MovieRvAdapter(R.layout.movie_item,this);
         selected = new MutableLiveData<>();
         movieName = new MutableLiveData<>();
-        editalbeName = "";
+        editableName = "";
+        emptyVisibility = new ObservableInt(View.GONE);
     }
 
-    public void fetchList(String movieName){
-        movies.fetchList(movieName);
+    public void fetchList(String movieName,int display){
+        movies.fetchList(movieName,display);
     }
 
     public MutableLiveData<List<Movie>> getMovies(){
@@ -48,8 +44,8 @@ public class MainViewModel extends ViewModel {
     }
 
     public void setMovieInAdapter(List<Movie> movies){
-        this.adapter.setMovies(movies);
-        this.adapter.notifyDataSetChanged();
+        adapter.setMovies(movies);
+        adapter.notifyDataSetChanged();
     }
 
 
@@ -66,11 +62,10 @@ public class MainViewModel extends ViewModel {
     public void onItemClick(Integer i){
         Movie movie = getMovieAt(i);
         selected.setValue(movie);
-        Log.d("@@@","item clicked");
     }
 
     public void onSearchClick(){
-        movieName.setValue(editalbeName);
+        movieName.setValue(editableName);
     }
     public Movie getMovieAt(Integer i){
         if(movies.getMovies().getValue()!=null && i != null && movies.getMovies().getValue().size() > i){
@@ -86,7 +81,7 @@ public class MainViewModel extends ViewModel {
             }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                editalbeName=s.toString();
+                editableName =s.toString();
             }
             @Override
             public void afterTextChanged(Editable s) {
