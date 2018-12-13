@@ -1,8 +1,6 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
@@ -12,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
-import kr.ac.skuniv.choejun_yeong.boostcamp3.MainViewModel;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
 
 public class MovieRvAdapter extends RecyclerView.Adapter<MovieViewHolder>  {

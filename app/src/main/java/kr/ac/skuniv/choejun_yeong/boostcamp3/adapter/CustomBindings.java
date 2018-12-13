@@ -13,9 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 public class CustomBindings {
 
     @BindingAdapter("setAdapter")
-    public static void bindRecyclerViewAdapter(RecyclerView recyclerView, RecyclerView.Adapter<?> adapter) {
+    public static void bindRecyclerViewAdapter(RecyclerView recyclerView, MoviePagedAdapter adapter) {
 //        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
+        recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(adapter);
     }
 

@@ -45,4 +45,8 @@ public class Movies extends BaseObservable {
                 .subscribe());
     }
 
+    public void unBind(){
+        compositeDisposable.clear();
+    }
+
 }

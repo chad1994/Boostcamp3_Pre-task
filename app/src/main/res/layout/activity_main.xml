@@ -6,7 +6,7 @@
     <data>
         <variable
             name="vm"
-            type="kr.ac.skuniv.choejun_yeong.boostcamp3.MainViewModel" />
+            type="kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

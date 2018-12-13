@@ -3,17 +3,18 @@ package kr.ac.skuniv.choejun_yeong.boostcamp3;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-
-import java.util.List;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.paging.PagedList;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.databinding.ActivityMainBinding;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,21 +35,48 @@ public class MainActivity extends AppCompatActivity {
             viewModel.init();
         }
         activityMainBinding.setVm(viewModel);
-        setupSearchClick();
+//        setupSearchClick();
+        setupList();
     }
 
-    private void setupList(String movieName, int display) {
-        viewModel.fetchList(movieName, display);
-        viewModel.getMovies().observe(this, new Observer<List<Movie>>() {
+
+//    private void setupSearchClick() {
+//        viewModel.getSeachMovieName().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(String movieName) {
+//                setupList();
+//            }
+//        });
+//    }
+
+    //    private void setupList(String movieName, int display) {
+    private void setupList() {
+//        viewModel.fetchList(movieName, display);
+//        viewModel.getMovies().observe(this, new Observer<List<Movie>>() {
+//            @Override
+//            public void onChanged(@Nullable List<Movie> movies) {
+//                if (movies.size() == 0 || movies == null) {
+//                    viewModel.emptyVisibility.set(View.VISIBLE);
+//                    viewModel.setMovieInAdapter(movies);
+//
+//                } else {
+//                    viewModel.emptyVisibility.set(View.GONE);
+//                    viewModel.setMovieInAdapter(movies);
+//                }
+//            }
+//        });
+        viewModel.getMovies().observe(this, new Observer<PagedList<Movie>>() {
             @Override
-            public void onChanged(@Nullable List<Movie> movies) {
+            public void onChanged(PagedList<Movie> movies) {
+                Log.d("@@@","IN@@");
                 if (movies.size() == 0 || movies == null) {
                     viewModel.emptyVisibility.set(View.VISIBLE);
                     viewModel.setMovieInAdapter(movies);
-
+                    viewModel.getAdapter().submitList(movies);
                 } else {
                     viewModel.emptyVisibility.set(View.GONE);
                     viewModel.setMovieInAdapter(movies);
+                    viewModel.getAdapter().submitList(movies);
                 }
             }
         });
@@ -70,13 +98,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void setupSearchClick() {
-        viewModel.getSeachMovieName().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(String movieName) {
-                setupList(movieName, MAX_DISPLAY);
-            }
-        });
-    }
 
+
+    @Override
+    protected void onPause() {
+        viewModel.unBind();
+        super.onPause();
+    }
 }

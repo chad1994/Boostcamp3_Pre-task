@@ -36,4 +36,14 @@ public class MovieService {
                     }
                 });
     }
+
+    public Observable<Response<ReponseMovie>> getMovieListbyPage(String movieName,int display,int start){
+        setService(BuildConfig.NaverClientID,BuildConfig.NaverClientSecret);
+        return mService.getMovieListbyPage(movieName,display,start).subscribeOn(Schedulers.io())
+                .doOnNext(res -> {
+                    if(res.code() == HttpsURLConnection.HTTP_OK){
+                        res.body();
+                    }
+                });
+    }
 }

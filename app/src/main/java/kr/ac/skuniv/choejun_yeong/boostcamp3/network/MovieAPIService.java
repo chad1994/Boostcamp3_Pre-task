@@ -15,4 +15,7 @@ import retrofit2.http.Query;
 public interface MovieAPIService {
     @GET("movie.json")
     Observable<Response<ReponseMovie>> getMovieList(@Query("query") String movieName,@Query("display")int display);
+
+    @GET("movie.json")
+    Observable<Response<ReponseMovie>> getMovieListbyPage(@Query("query") String movieName,@Query("display")int display,@Query("start")int start);
 }
