@@ -1,3 +1,4 @@
+/*
 package kr.ac.skuniv.choejun_yeong.boostcamp3.model;
 
 
@@ -50,3 +51,4 @@ public class Movies extends BaseObservable {
     }
 
 }
+*/

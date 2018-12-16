@@ -12,14 +12,18 @@ import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.paging.PagedList;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.adapter.MoviePagedAdapter;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.databinding.ActivityMainBinding;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
-import kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.ui.main.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final int MAX_DISPLAY = 100;
     private MainViewModel viewModel;
+    private ActivityMainBinding activityMainBinding;
+    private MoviePagedAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,76 +33,57 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupBindings(Bundle savedInstanceState) {
-        ActivityMainBinding activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
         if (savedInstanceState == null) {
             viewModel.init();
         }
         activityMainBinding.setVm(viewModel);
-//        setupSearchClick();
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        activityMainBinding.mainRv.setLayoutManager(layoutManager);
+        adapter = new MoviePagedAdapter(viewModel);
+        activityMainBinding.mainRv.setAdapter(adapter);
         setupList();
-    }
-
-
-//    private void setupSearchClick() {
-//        viewModel.getSeachMovieName().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(String movieName) {
-//                setupList();
-//            }
-//        });
-//    }
-
-    //    private void setupList(String movieName, int display) {
-    private void setupList() {
-//        viewModel.fetchList(movieName, display);
-//        viewModel.getMovies().observe(this, new Observer<List<Movie>>() {
-//            @Override
-//            public void onChanged(@Nullable List<Movie> movies) {
-//                if (movies.size() == 0 || movies == null) {
-//                    viewModel.emptyVisibility.set(View.VISIBLE);
-//                    viewModel.setMovieInAdapter(movies);
-//
-//                } else {
-//                    viewModel.emptyVisibility.set(View.GONE);
-//                    viewModel.setMovieInAdapter(movies);
-//                }
-//            }
-//        });
-        viewModel.getMovies().observe(this, new Observer<PagedList<Movie>>() {
-            @Override
-            public void onChanged(PagedList<Movie> movies) {
-                Log.d("@@@","IN@@");
-                if (movies.size() == 0 || movies == null) {
-                    viewModel.emptyVisibility.set(View.VISIBLE);
-                    viewModel.setMovieInAdapter(movies);
-                    viewModel.getAdapter().submitList(movies);
-                } else {
-                    viewModel.emptyVisibility.set(View.GONE);
-                    viewModel.setMovieInAdapter(movies);
-                    viewModel.getAdapter().submitList(movies);
-                }
-            }
-        });
         setupListClick();
     }
 
-    private void setupListClick() {
-        viewModel.getSelected().observe(this, new Observer<Movie>() {
+
+    private void setupList() {
+        viewModel.getHasSearched().observe(this, new Observer<Boolean>() {
             @Override
-            public void onChanged(@Nullable Movie movie) {
-                if (movie != null) {
+            public void onChanged(Boolean aBoolean) {
+                if (aBoolean==true) {
+                    viewModel.getMovies().observe(MainActivity.this, new Observer<PagedList<Movie>>() {
+                        @Override
+                        public void onChanged(@Nullable PagedList<Movie> movies) {
+                            if (movies != null) {
+                                viewModel.emptyVisibility.set(View.GONE);
+                                adapter.submitList(movies);
+                                Log.d("@@@movie",""+movies.getLoadedCount()+"/"+movies.getLastKey()+"/"+movies.getPositionOffset()+"/"+movies.size()+"/"+movies.isEmpty());
+                                viewModel.getHasSearched().postValue(false);
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    private void setupListClick() {
+        viewModel.getSelected().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String movieUrl) {
+                if (movieUrl != null) {
                     //TODO 화면전환.
                     Intent intent = new Intent(Intent.ACTION_VIEW);
-                    Uri uri = Uri.parse(movie.getLink());
+                    Uri uri = Uri.parse(movieUrl);
                     intent.setData(uri);
                     startActivity(intent);
                 }
             }
         });
     }
-
-
 
     @Override
     protected void onPause() {

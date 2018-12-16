@@ -2,21 +2,24 @@ package kr.ac.skuniv.choejun_yeong.boostcamp3.adapter;
 
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
-import kr.ac.skuniv.choejun_yeong.boostcamp3.BR;
-import kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.databinding.MovieItemBinding;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
+import kr.ac.skuniv.choejun_yeong.boostcamp3.ui.main.MainEventListener;
 
 public class MovieViewHolder extends RecyclerView.ViewHolder {
-    private ViewDataBinding binding;
+    private MovieItemBinding binding;
+    private MainEventListener listener;
 
 
-    public MovieViewHolder(ViewDataBinding binding) {
+    public MovieViewHolder(MovieItemBinding binding,MainEventListener listener) {
         super(binding.getRoot());
         this.binding = binding;
+        this.listener = listener;
     }
 
-    void bind(MainViewModel viewModel,Integer position){
-        binding.setVariable(BR.position,position);
-        binding.setVariable(BR.vm,viewModel);
+    void bind(Movie movie){
+        binding.setMovie(movie);
+        binding.setMainListener(listener);
         binding.executePendingBindings();
     }
 }

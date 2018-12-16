@@ -1,13 +1,10 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.service;
 
-import java.util.List;
-
 import javax.net.ssl.HttpsURLConnection;
 
 import io.reactivex.Observable;
 import io.reactivex.schedulers.Schedulers;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.BuildConfig;
-import kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.model.ReponseMovie;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.network.MovieAPIService;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.network.NetworkUtil;

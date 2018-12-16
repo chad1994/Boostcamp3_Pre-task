@@ -6,30 +6,30 @@
     <data>
         <variable
             name="vm"
-            type="kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel" />
+            type="kr.ac.skuniv.choejun_yeong.boostcamp3.ui.main.MainViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        >
+        tools:context=".MainActivity">
 
         <EditText
             android:id="@+id/main_search_edittext"
+            textChangedListener="@{vm}"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/main_search_btn"
             android:singleLine="true"
-            textChangedListener="@{vm.textWatcher()}"/>
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/main_search_btn" />
 
         <Button
             android:id="@+id/main_search_btn"
             android:layout_width="100dp"
             android:layout_height="50dp"
+            android:onClick="@{()->vm.search()}"
             android:text="검 색"
-            android:onClick="@{()->vm.onSearchClick()}"
             app:layout_constraintLeft_toRightOf="@id/main_search_edittext"
             app:layout_constraintRight_toRightOf="parent" />
 
@@ -38,22 +38,21 @@
             android:id="@+id/main_rv"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/main_search_edittext"
-            app:setAdapter="@{vm.getAdapter()}"/>
+            app:layout_constraintTop_toBottomOf="@+id/main_search_edittext" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/main_search_edittext"
+            android:layout_marginTop="150dp"
+            android:text="해당 검색어에 해당하는 내용이 없습니다."
+            android:textSize="20sp"
+            android:visibility="@{vm.emptyVisibility}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="150dp"
-            android:textSize="20sp"
-            android:text="해당 검색어에 해당하는 내용이 없습니다."
-            android:visibility="@{vm.emptyVisibility}"/>
+            app:layout_constraintTop_toBottomOf="@id/main_search_edittext" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

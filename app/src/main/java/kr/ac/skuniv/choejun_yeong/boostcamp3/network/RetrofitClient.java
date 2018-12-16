@@ -1,8 +1,5 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.network;
 
-import java.util.Scanner;
-
-import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

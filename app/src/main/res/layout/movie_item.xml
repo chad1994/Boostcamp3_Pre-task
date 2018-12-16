@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
 
     <data>
 
         <variable
-            name="position"
-            type="java.lang.Integer"/>
-
+            name="movie"
+            type="kr.ac.skuniv.choejun_yeong.boostcamp3.model.Movie" />
         <variable
-            name="vm"
-            type="kr.ac.skuniv.choejun_yeong.boostcamp3.viewmodel.MainViewModel" />
+            name="mainListener"
+            type="kr.ac.skuniv.choejun_yeong.boostcamp3.ui.main.MainEventListener"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/constraint_dimens"
         android:background="@drawable/border_bottom"
-        android:onClick="@{()->vm.onItemClick(position)}">
+        android:padding="@dimen/constraint_dimens"
+        android:onClick="@{()->mainListener.onItemClick(movie.link)}">
 
 
         <ImageView
             android:id="@+id/movie_item_image"
             android:layout_width="100dp"
             android:layout_height="150dp"
+            setImage="@{movie.image}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@color/colorAccent"
-            setImage="@{vm.getMovieAt(position).image}"
-            />
+            app:srcCompat="@color/colorAccent" />
 
         <TextView
             android:id="@+id/movie_item_title"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
+            android:text="@{movie.title}"
             android:layout_marginLeft="20dp"
-            android:text="@{vm.getMovieAt(position).title}"
             android:textSize="16sp"
             app:layout_constraintLeft_toRightOf="@+id/movie_item_image" />
 
         <RatingBar
             android:id="@+id/movie_item_user_rating"
+            style="?android:attr/ratingBarStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="?android:attr/ratingBarStyleSmall"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
             android:isIndicator="true"
+            android:rating="@{Float.parseFloat(movie.userRating)/2.0f}"
             android:max="10"
             android:numStars="5"
-            android:rating="@{Float.parseFloat(vm.getMovieAt(position).userRating)/2.0f}"
             android:stepSize="0.5"
             app:layout_constraintLeft_toRightOf="@id/movie_item_image"
             app:layout_constraintTop_toBottomOf="@id/movie_item_title" />
@@ -61,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="@{vm.getMovieAt(position).pubDate}"
+            android:text="@{movie.pubDate}"
             android:textSize="14sp"
             app:layout_constraintLeft_toRightOf="@id/movie_item_image"
             app:layout_constraintTop_toBottomOf="@id/movie_item_user_rating" />
@@ -72,8 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="@{vm.getMovieAt(position).director}"
             android:textSize="14sp"
+            android:text="@{movie.director}"
             app:layout_constraintLeft_toRightOf="@id/movie_item_image"
             app:layout_constraintTop_toBottomOf="@id/movie_item_pubdate" />
 
@@ -83,8 +82,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:text="@{vm.getMovieAt(position).actor}"
             android:textSize="14sp"
+            android:text="@{movie.actor}"
             app:layout_constraintLeft_toRightOf="@id/movie_item_image"
             app:layout_constraintTop_toBottomOf="@id/movie_item_director" />
 
