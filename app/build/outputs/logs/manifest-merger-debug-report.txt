@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.databinding:databinding-adapters:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.2.1.aar/1ed4521b276cec033e6b9716fd81a58f/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.2.1.aar/866bcdf558dd57689620861fb411ac24/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/2f200544239e4b008daf5bbb53a1aed9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/e2bc3c866cd7b4b5113de19f55c4f744/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.paging:paging-runtime:2.1.0-rc01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/paging-runtime-2.1.0-rc01.aar/622e1650b93c55557a5b3ae54315c377/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/0073f8a6b83485a0d7e702b4a2b27a02/AndroidManifest.xml:17:1-22:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/0a55d930132d5e85b7e55ab2e8914dd6/AndroidManifest.xml:15:1-21:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/c4c082c5b11fb51d245035b828fe6475/AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/6ca3b3381d84e28fb7c4a7c3a132c3c0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/6f824079cdb550ef63958c35dbc30e46/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/559021beea87595f1ad6b78fdc152a50/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/bb928b787e7d62c621ed0964f4d2a4db/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/accb5b13c81daef6b04487fc6d97f4a0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha02.aar/18c0d20b0d6c33c5816f37ccdd9d79a8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/65532afb2ef04811b9d79f7f54421f81/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/a1a466220811861937532fd91411c727/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/afc4d6e9c760d5d44e349bdb1fa7ce32/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/43c6288004179a7586a26f65a579a3af/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/c9c4e763a53574e81a3761ee028e0631/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f60c17ab3733ba3cd022082742ca1598/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/fb7ede7944926a5336f8d91bd6ed75e0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f9dd16055488075d69e504e1cc0f69f3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/activity-1.0.0-alpha02.aar/077e00e2b2d6a6aab35a53a0b5d00987/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/63c55abea1dd8f0803046317b7cc29b7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/b0c069d5d4e4f802650518c5c6271778/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha01.aar/9cafc6c57c75ad1bb574e6693711f58c/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/1dcbb5a6bf9deec54c7046b45f54f881/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8000cb9ae06a6a7fb0acd6442f2f1a15/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/64f1bcbd66b26e04ebfad3ea585d7664/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/f4aa0402d37e35bdbae11659c05a807e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/f3bd9298f9633a3e21e37f328119d241/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/bd675585bfce104d37ea1ce9a66a90c1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/5fec9896fb7520af30e9a6003eb96cd1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/46da63aee24247748c83465d1a9364bd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/85cbfa6d3735bee36ae0bb765f817925/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/80776cc5dd59497a5662658fe884af4c/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:5:5-83
+	android:name
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:7:5-21:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/e2bc3c866cd7b4b5113de19f55c4f744/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/e2bc3c866cd7b4b5113de19f55c4f744/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/c4c082c5b11fb51d245035b828fe6475/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/c4c082c5b11fb51d245035b828fe6475/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/6ca3b3381d84e28fb7c4a7c3a132c3c0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/6ca3b3381d84e28fb7c4a7c3a132c3c0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha01.aar/9cafc6c57c75ad1bb574e6693711f58c/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha01.aar/9cafc6c57c75ad1bb574e6693711f58c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/80776cc5dd59497a5662658fe884af4c/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/80776cc5dd59497a5662658fe884af4c/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:10:9-41
+	android:roundIcon
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:13:9-40
+activity#kr.ac.skuniv.choejun_yeong.boostcamp3.MainActivity
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:name
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:14:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.2.1.aar/1ed4521b276cec033e6b9716fd81a58f/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.2.1.aar/1ed4521b276cec033e6b9716fd81a58f/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.2.1.aar/866bcdf558dd57689620861fb411ac24/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.2.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.2.1.aar/866bcdf558dd57689620861fb411ac24/AndroidManifest.xml:22:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/2f200544239e4b008daf5bbb53a1aed9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/appcompat-1.1.0-alpha01.aar/2f200544239e4b008daf5bbb53a1aed9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/e2bc3c866cd7b4b5113de19f55c4f744/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/e2bc3c866cd7b4b5113de19f55c4f744/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.paging:paging-runtime:2.1.0-rc01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/paging-runtime-2.1.0-rc01.aar/622e1650b93c55557a5b3ae54315c377/AndroidManifest.xml:20:5-44
+MERGED from [androidx.paging:paging-runtime:2.1.0-rc01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/paging-runtime-2.1.0-rc01.aar/622e1650b93c55557a5b3ae54315c377/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/0073f8a6b83485a0d7e702b4a2b27a02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/0073f8a6b83485a0d7e702b4a2b27a02/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/0a55d930132d5e85b7e55ab2e8914dd6/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/0a55d930132d5e85b7e55ab2e8914dd6/AndroidManifest.xml:19:5-43
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/c4c082c5b11fb51d245035b828fe6475/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/c4c082c5b11fb51d245035b828fe6475/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/6ca3b3381d84e28fb7c4a7c3a132c3c0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.8.0.aar/6ca3b3381d84e28fb7c4a7c3a132c3c0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/6f824079cdb550ef63958c35dbc30e46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/6f824079cdb550ef63958c35dbc30e46/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/559021beea87595f1ad6b78fdc152a50/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/559021beea87595f1ad6b78fdc152a50/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/bb928b787e7d62c621ed0964f4d2a4db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/bb928b787e7d62c621ed0964f4d2a4db/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/accb5b13c81daef6b04487fc6d97f4a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/accb5b13c81daef6b04487fc6d97f4a0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha02.aar/18c0d20b0d6c33c5816f37ccdd9d79a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/fragment-1.1.0-alpha02.aar/18c0d20b0d6c33c5816f37ccdd9d79a8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/65532afb2ef04811b9d79f7f54421f81/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/65532afb2ef04811b9d79f7f54421f81/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/a1a466220811861937532fd91411c727/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/a1a466220811861937532fd91411c727/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/afc4d6e9c760d5d44e349bdb1fa7ce32/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/afc4d6e9c760d5d44e349bdb1fa7ce32/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/43c6288004179a7586a26f65a579a3af/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/43c6288004179a7586a26f65a579a3af/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/c9c4e763a53574e81a3761ee028e0631/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/c9c4e763a53574e81a3761ee028e0631/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f60c17ab3733ba3cd022082742ca1598/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/f60c17ab3733ba3cd022082742ca1598/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/fb7ede7944926a5336f8d91bd6ed75e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/fb7ede7944926a5336f8d91bd6ed75e0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f9dd16055488075d69e504e1cc0f69f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f9dd16055488075d69e504e1cc0f69f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/activity-1.0.0-alpha02.aar/077e00e2b2d6a6aab35a53a0b5d00987/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0-alpha02] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/activity-1.0.0-alpha02.aar/077e00e2b2d6a6aab35a53a0b5d00987/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/63c55abea1dd8f0803046317b7cc29b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.1.aar/63c55abea1dd8f0803046317b7cc29b7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-1.1.0-alpha01.aar/627dc4e132c60d00aa2bea0f1a7823cb/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/b0c069d5d4e4f802650518c5c6271778/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/b0c069d5d4e4f802650518c5c6271778/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha01.aar/9cafc6c57c75ad1bb574e6693711f58c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-alpha01] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.1.0-alpha01.aar/9cafc6c57c75ad1bb574e6693711f58c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/1dcbb5a6bf9deec54c7046b45f54f881/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/1dcbb5a6bf9deec54c7046b45f54f881/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8000cb9ae06a6a7fb0acd6442f2f1a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8000cb9ae06a6a7fb0acd6442f2f1a15/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/64f1bcbd66b26e04ebfad3ea585d7664/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/64f1bcbd66b26e04ebfad3ea585d7664/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/f4aa0402d37e35bdbae11659c05a807e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/f4aa0402d37e35bdbae11659c05a807e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/f3bd9298f9633a3e21e37f328119d241/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/f3bd9298f9633a3e21e37f328119d241/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/bd675585bfce104d37ea1ce9a66a90c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/bd675585bfce104d37ea1ce9a66a90c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/5fec9896fb7520af30e9a6003eb96cd1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/5fec9896fb7520af30e9a6003eb96cd1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/46da63aee24247748c83465d1a9364bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/46da63aee24247748c83465d1a9364bd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/85cbfa6d3735bee36ae0bb765f817925/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/85cbfa6d3735bee36ae0bb765f817925/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/80776cc5dd59497a5662658fe884af4c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.8.0.aar/80776cc5dd59497a5662658fe884af4c/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		ADDED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/choejun-yeong/Desktop/boostcamp3/app/src/main/AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/choejun-yeong/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/31d72bddfc7aeb85755093f7d536df45/AndroidManifest.xml:24:13-79

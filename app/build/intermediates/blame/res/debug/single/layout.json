@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/choejun-yeong/Desktop/boostcamp3/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/movie_item.xml",
+        "source": "/Users/choejun-yeong/Desktop/boostcamp3/app/src/main/res/layout/movie_item.xml"
+    },
+    {
+        "merged": "/Users/choejun-yeong/Desktop/boostcamp3/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/choejun-yeong/Desktop/boostcamp3/app/src/main/res/layout/activity_main.xml"
+    }
+]

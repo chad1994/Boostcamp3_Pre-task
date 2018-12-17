@@ -1,9 +1,12 @@
 package kr.ac.skuniv.choejun_yeong.boostcamp3.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.paging.PagedList;
 import androidx.paging.PagedListAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import kr.ac.skuniv.choejun_yeong.boostcamp3.databinding.MovieItemBinding;
@@ -45,4 +48,5 @@ public class MoviePagedAdapter extends PagedListAdapter<Movie, MovieViewHolder> 
                     return oldItem.equals(newItem);
                 }
             };
+
 }

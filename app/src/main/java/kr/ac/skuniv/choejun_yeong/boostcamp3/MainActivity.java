@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
                             if (movies != null) {
                                 viewModel.emptyVisibility.set(View.GONE);
                                 adapter.submitList(movies);
-                                Log.d("@@@movie",""+movies.getLoadedCount()+"/"+movies.getLastKey()+"/"+movies.getPositionOffset()+"/"+movies.size()+"/"+movies.isEmpty());
                                 viewModel.getHasSearched().postValue(false);
                             }
                         }
